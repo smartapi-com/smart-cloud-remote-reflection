@@ -6,7 +6,7 @@ import com.jk.util.reflection.common.MethodCallInfo;
 public class App {
 	public static void main(String[] args) {
 		ReflectionClient client=new ReflectionClient("localhost", 7125);
-		MethodCallInfo info=new  MethodCallInfo("com.app.server.TestService", "hello", "Jalal");
+		MethodCallInfo info=new  MethodCallInfo("com.app.server.Service", "hello", "Jalal");
 		client.callMethod(info);
 		
 		String result = (String) info.getResult();
